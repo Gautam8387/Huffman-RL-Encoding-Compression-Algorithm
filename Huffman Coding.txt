@@ -1,0 +1,17 @@
+Huffman coding is a lossless data compression algorithm that is used to compress data in a more efficient way by representing the frequently occurring characters with shorter bit sequences and the less frequent characters with longer bit sequences. The main idea behind Huffman coding is to assign shorter codewords to the more frequently occurring characters in the data, so that when the data is encoded, it will take up less space. This is done by building a binary tree, where the nodes at the bottom represent the individual characters in the data, and the nodes at the top represent the combination of two or more characters.
+
+The algorithm works as follows:
+
+1. Calculate the frequency of each character in the data.
+2. Create a leaf node for each character, with the frequency of the character as its weight.
+3. Sort the leaf nodes in ascending order of frequency.
+4. While there is more than one node in the tree:
+a. Take the two nodes with the lowest frequencies and create a new internal node with these two nodes as children, and the sum of their frequencies as the weight of the new node.
+b. Add the new node to the list of nodes.
+5. The remaining node is the root node of the tree.
+Assign a unique codeword to each character by traversing the tree from the root to the leaf node corresponding to the character. For example, if the left child of a node corresponds to a 0 and the right child corresponds to a 1, then you can assign a 0 to the left child and a 1 to the right child.
+To compress the data using Huffman coding, you can then replace each character in the original data with its corresponding codeword. This will result in a smaller representation of the data, since the more frequently occurring characters will have shorter codewords.
+
+To decompress the data, you can simply reverse the process by traversing the tree from the root and following the codewords until you reach a leaf node, at which point you can output the corresponding character.
+
+Huffman coding is used in a wide range of applications, including file compression, image compression, and data transmission. It is an efficient and widely used compression algorithm due to its simplicity and effectiveness in reducing the size of data.
