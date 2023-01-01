@@ -1,11 +1,11 @@
 # Huffman-RL-Encoding-Compression-Algorithm
 
-## Gautam Ahuja
-## CS-1203: Data Structures
-## Debayan Gupta
-## December 22, 2022
+Gautam Ahuja
+CS-1203: Data Structures
+Debayan Gupta
+December 22, 2022
 
-## Final Project Idea: COMPRESSION ALGORITHM (HUFFMAN CODING + RUN-LENGTH ENCODING + MIN-HEAP)
+## Final Project: COMPRESSION ALGORITHM (HUFFMAN CODING + RUN-LENGTH ENCODING + MIN-HEAP)
 
 ### LOGIC:
 - If a string has repeatition of characters, then note down the frequency and create a string with single character.
@@ -85,5 +85,4 @@ Command to run the code on terminal:
 - It also outputs the compression ratio.
 
 <!-- Link file "Documentation" -->
-### Read the [Documentation](./Documentation.txt) for more details.
-[a link](.\Documentation.txt)
+### Read the [Documentation](./Documentation.md) for more details.

@@ -1,24 +1,24 @@
+# DOCUMENTATION FOR Gautam_Ahuja_Huffman_Code_Compression.c 
+
 Gautam Ahuja
 CS-1203: Data Structures
 Debayan Gupta
 
 December 22, 2022
 
-Final Project Idea: COMPRESSION ALGORITHM (HUFFMAN CODING + RUN-LENGTH ENCODING + MIN-HEAP)
+# Final Project: COMPRESSION ALGORITHM (HUFFMAN CODING + RUN-LENGTH ENCODING + MIN-HEAP)
 
-DOCUMENTATION FOR Gautam_Ahuja_Huffman_Code_Compression.c 
-
-HEADER FILES USED:
+## HEADER FILES USED:
 1. stdio.h
 2. stdlib.h
 3. string.h
 4. ctype.h
 
-STRUCTURES USED:
+## STRUCTURES USED:
 1. MinHeapNode
 2. MinHeap
 
-FUNCTIONS USED:
+## FUNCTIONS USED:
 1. MinHeapNode* newNode(char data, unsigned freq)
 2. MinHeap* createMinHeap(unsigned capacity)
 3. void swapMinHeapNode(MinHeapNode** a, MinHeapNode** b)
@@ -34,7 +34,7 @@ FUNCTIONS USED:
 13. void HuffmanCodes(char data[], int freq[], int size)
 14. int main()
 
-TIME COMPLEXITY:
+## TIME COMPLEXITY:
 1. MinHeapNode* newNode(char data, unsigned freq) - O(1)
 2. MinHeap* createMinHeap(unsigned capacity) - O(1)
 3. void swapMinHeapNode(MinHeapNode** a, MinHeapNode** b) - O(1)
@@ -49,9 +49,9 @@ TIME COMPLEXITY:
 12. void printCodes(MinHeapNode* root, int arr[], int top) - O(n)
 13. void HuffmanCodes(char data[], int freq[], int size) - O(n log n)
 14. int main() - O(n log n)
-For complete Program: O(n log n)
+### For complete Program: O(n log n)
 
-SPACE COMPLEXITY:
+## SPACE COMPLEXITY:
 1. MinHeapNode* newNode(char data, unsigned freq) - O(1)
 2. MinHeap* createMinHeap(unsigned capacity) - O(1)
 3. void swapMinHeapNode(MinHeapNode** a, MinHeapNode** b) - O(1)
@@ -66,4 +66,4 @@ SPACE COMPLEXITY:
 12. void printCodes(MinHeapNode* root, int arr[], int top) - O(n)
 13. void HuffmanCodes(char data[], int freq[], int size) - O(n)
 14. int main() - O(n)
-For complete Program: O(n)
+### For complete Program: O(n)
